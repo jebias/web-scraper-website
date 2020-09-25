@@ -109,13 +109,19 @@ for x in movies['movie']:
     movierank.append(rank_count)
     rank_count += 1
 
+# I ran into an error because some titles had a ' character. This it to remove all ' from the titles because I don't want to research how to make ' work with the SQL.
+title_count = 0
+for x in movies['movie']:
+    movies['movie'][title_count] = x.replace('\'', '')
+    title_count += 1
+
 """ # catch all us_grossMillions that show nan
 for x in movies['us_grossMillions']:
     if math.isnan(x):
         movies['us_grossMillions'][x] = float(-1) """
 
 """ for x in movierank:
-    print("INSERT INTO top_50_movies (place, name, years, timeMin, imbd, metascore, votes, us_grossMillions) VALUES ({}, {}, {}, {}, {}, {}, {}, {})".format(x, movies['movie'][x], movies['year'][x], movies['timeMin'][x], movies['imbd'][x], movies['metascore'][x], movies['votes'][x], movies['us_grossMillions'][x]))
+    print(r"INSERT INTO top_50_movies (place, name, years, timeMin, imbd, metascore, votes, us_grossMillions) VALUES ({}, {}, {}, {}, {}, {}, {}, {})".format(x, movies['movie'][x], movies['year'][x], movies['timeMin'][x], movies['imbd'][x], movies['metascore'][x], movies['votes'][x], movies['us_grossMillions'][x]))
  """
 for x in movierank:
 
