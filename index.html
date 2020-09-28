@@ -1,51 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <!--Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>James Bias Portfolio</title>
+    <!-- jquery needed for js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- End of Bootstrap-->
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- js for bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="homepage-style.css" type="text/css" />
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  
 </head>
 <body>
-    <div id="main-container" class="container">
-        <!-- Bootstrap form to choose which site the user wants to scrape -->
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                    <label class="form-check-label" for="exampleRadios1">
-                      Top 50 Movies
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Second default radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                    <label class="form-check-label" for="exampleRadios3">
-                      Disabled radio
-                    </label>
-                    <br>
-                    <button type="button" class="btn btn-primary btn-lg" value="Submit">Go!</button>
-                  </div>
-            </div>
-            <div class="col"></div>
-          </div>
+
+    <!-- nav bar from bootstrap -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">James</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#sample-game">Game</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#external-links">Links</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+    <!-- <nav class="nav-bar" >
+        <ul>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a href="#sample-game">Game</a></li>
+            <li><a href="#external-links">Links</a></li>
+        </ul>
+    </nav> -->
+    
+    <main>
+        <div class="container">
+        <div class="welcome fill-screen">
+            <h1>Welcome to my Website.</h1>
+            <hr>
         </div>
-        
-          <!-- End of form -->
-      </div>
+        <div id="portfolio" class="portfolio fill-screen">
+            <h2>Portfolio</h2>
+            <ul class="portfolio-links row">
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/djqoOP" target="_blank"><img src="images/technical-page.PNG" /><div class="portfolio-title">Tutorial Page</div></a>
+                <p class="description">Just a simple Python tutorial that I copied from the internet. I wanted to try out the "section" and "nav" tags.</p> </li>
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/jXzwWe" target="_blank"><img src="images/image-gallery.PNG" /><div class="portfolio-title">Image Gallery</div></a>
+                <p class="description">A sample image gallery webpage that was made using mostly Bootstrap.</p> </li>
+                <li class="col-md-4 col-xs-12"><a href="https://codepen.io/jamesbias/full/gZzrwb" target="_blank"><img src="images/landing-page.PNG" /><div class="portfolio-title">Startup Landing Page</div></a>
+                <p class="description">A landing page for a made-up cat adoption startup. Still no functionality, but at least it looks cool.</p> </li>
+				<li class="col-md-4 col-xs-12"><a href="https://github.com/jebias/web-scraper-website" target="_blank"><img src="https://www.pikpng.com/pngl/m/7-79656_under-construction-png-image-file-under-construction-sign.png" alt="Under Construction Png Image File - Under Construction Sign Clipart Transparent Png@pikpng.com"><div class="portfolio-title">Web Scraper Website</div></a>
+                <p class="description">My current project that uses a Web Scraper (made with Python) to grab a list of the top 50 movies from IMBD, store them in a MySQL database, then post the data from the database to the website when a user presses the button.</p> </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="sample-game" class="sample-game fill-screen" >
+            <h2>
+                Simple JavaScript Game
+            </h2>
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+            <script src="brick-break.js"></script>
+        </div>
+        <div id="external-links" class="external-links" >
+            <h2>
+                External Links
+            </h2>
+            <ul class="links-list">
+                <li><a class="links" href="https://github.com/jebias" target="_blank">GitHub</a></li>
+                <li><a class="links" href="https://codepen.io/jamesbias/" target="_blank">CodePen</a></li>
+                <li><a class="links" href="mailto:jamesbias13@gmail.com">Email Me</a></li>
+            </ul>
+                
+            
+        </div>
+    </div>
+    </main>
 </body>
 </html>
